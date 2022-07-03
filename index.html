@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="styles.css" />
+		<title>convertisseur de devise</title>
+	</head>
+	<body>
+		<section class="exchange">
+			<h1>CONVERTOR</h1>
+			<div class="container">
+				<div class="currency">
+					<span class="select">
+						<select id="currency-1">
+							<option value="CNY">CNY</option>
+							<option value="BRL">BRL</option>
+							<option value="EGP">EGP</option>
+							<option value="EUR">EUR</option>
+							<option value="GBP">GBP</option>
+							<option value="USD" selected>USD</option>
+							<option value="XAF">XAF</option>
+						</select>
+					</span>
+					<input class="rate-box" type="text" id="amount-1" placeholder="0" value="1" />
+				</div>
+
+                <div class="swap-rate">
+                    <button type="button" class="btn" id="swap"><span>&#8593</span><span>&#8595</span></button>
+                    <div id="rate"></div>
+                    <img class="rate-icon" src="balance.png" alt="" />
+                </div>
+
+				<div class="currency">
+					<span class="select">
+						<select id="currency-2">
+							<option value="CNY">CNY</option>
+							<option value="BRL">BRL</option>
+							<option value="EGP">EGP</option>
+							<option value="EUR">EUR</option>
+							<option value="GBP">GBP</option>
+							<option value="USD">USD</option>
+							<option value="XAF" selected>XAF</option>
+						</select>
+					</span>
+					<input class="rate-box" type="text" id="amount-2" value="1" disabled />
+				</div>
+			</div>
+		</section>
+
+		<script src="script.js"></script>
+	</body>
+</html>
